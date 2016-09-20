@@ -1,0 +1,20 @@
+.content-wrap{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.nav-header{
+  height: 80px;
+  background-color: lightseagreen;
+  flex-shrink:0;
+}
+.nav-footer{
+  height: 80px;
+  background-color: lightseagreen;
+  flex-shrink:0;
+}
+.content-main{
+  flex-grow: 1;
+  background-color: deeppink;
+  overflow-y: scroll;
+}

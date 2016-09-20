@@ -1,10 +1,16 @@
 import React from 'react';
+import NavHeader from './components/NavHeader';
+import NavFooter from './components/NavFooter';
 
 class App extends React.Component {
   render () {
     return(
-      <div>
-        Hello World
+      <div className="content-wrap">
+        <NavHeader />
+        <div className="content-main">
+          {this.props.children}
+        </div>
+        <NavFooter />
       </div>
     )
   }
