@@ -13,24 +13,7 @@ class Home extends React.Component {
         <p>sfdsfds</p>
         <p>sfdsfds</p>
         <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
-        <p>sfdsfds</p>
+
       </div>
     )
   }
