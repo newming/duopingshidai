@@ -5,4 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './main.css';
 import Routers from './routes';
 
-render(<Routers />,document.getElementById('root'));
+
+import Test from './Test';
+
+render(<Test />,document.getElementById('root'));
