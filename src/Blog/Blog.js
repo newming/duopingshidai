@@ -1,11 +1,18 @@
 import React from 'react';
 import BlogCard from '../components/BlogCard'
 
+let data=[
+  {index:1,title:'如何成为高手',desc:'天天学天天学天天学天天学天天学天天学天天学天天学'},
+  {index:2,title:'如何成为高手',desc:'天天学天天学天天学天天学天天学天天学天天学天天学'},
+  {index:3,title:'如何成为高手',desc:'天天学天天学天天学天天学天天学天天学天天学天天学'},
+  {index:4,title:'如何成为高手',desc:'天天学天天学天天学天天学天天学天天学天天学天天学'}
+]
+
 class Blog extends React.Component {
   render () {
     return(
       <div style={{width:'100%',marginTop:'20px'}}>
-        <BlogCard />
+        { data.map( (item,i) => <BlogCard {...item} key={i} /> ) }
       </div>
     )
   }

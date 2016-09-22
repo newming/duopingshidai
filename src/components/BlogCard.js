@@ -43,10 +43,10 @@ class BlogCard extends React.Component {
     }
     return(
       <div style={styles.root}>
-        <div style={styles.index}><span style={styles.num}>1</span></div>
+        <div style={styles.index}><span style={styles.num}>{this.props.index}</span></div>
         <div style={styles.content}>
-          <p style={styles.title}>我是标题</p>
-          <p style={styles.desc}>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
+          <p style={styles.title}>{this.props.title}</p>
+          <p style={styles.desc}>{this.props.desc}</p>
           <a href="#" className="blog-btn">阅读更多</a>
         </div>
       </div>
@@ -54,4 +54,14 @@ class BlogCard extends React.Component {
   }
 }
 
+BlogCard.defaultProps={
+  index:1,
+  title:'这里是标题',
+  desc:'这里是介绍'
+}
+BlogCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired
+};
 export default BlogCard;
