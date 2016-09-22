@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
 class BlogCard extends React.Component {
   render () {
@@ -41,13 +42,14 @@ class BlogCard extends React.Component {
         marginBottom:'20px'
       }
     }
+    let address = `item/${this.props.url}`;
     return(
       <div style={styles.root}>
         <div style={styles.index}><span style={styles.num}>{this.props.index}</span></div>
         <div style={styles.content}>
           <p style={styles.title}>{this.props.title}</p>
           <p style={styles.desc}>{this.props.desc}</p>
-          <a href="#" className="blog-btn">阅读更多</a>
+          <Link to={address} className="blog-btn">阅读更多</Link>
         </div>
       </div>
     )
