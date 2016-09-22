@@ -6,29 +6,49 @@ class BlogCard extends React.Component {
       root:{
         boxShadow: '0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24)',
         width:'96%',
-        borderRadius:'5px',
+        borderRadius:'10px',
         margin:'0 auto',
         marginBottom:'20px',
       },
       index:{
-
+        backgroundColor:'#00bcd4',
+        height:'80px',
+        textAlign:'center',
+        borderRadius: '10px 10px 0 0',
+        paddingTop:'10px'
+      },
+      num:{
+        lineHeight:'60px',
+        width:'60px',
+        height:'60px',
+        borderRadius:'50%',
+        border: '2px solid #fff',
+        display:'block',
+        fontSize:'20px',
+        margin:'0px auto',
+        color:'#fff'
+      },
+      content:{
+        padding:'16px',
+        color:'#727272',
       },
       title:{
-
+        fontSize:'18px',
+        marginBottom:'20px'
       },
       desc:{
-
-      },
-      btn:{
-
+        fontSize:'16px',
+        marginBottom:'20px'
       }
     }
     return(
       <div style={styles.root}>
-        <p style={styles.index}>1</p>
-        <p style={styles.title}>我是标题</p>
-        <p style={styles.desc}>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
-        <a href="#" style={styles.btn}>阅读更多</a>
+        <div style={styles.index}><span style={styles.num}>1</span></div>
+        <div style={styles.content}>
+          <p style={styles.title}>我是标题</p>
+          <p style={styles.desc}>这里是介绍这里是介绍这里是介绍这里是介绍这里是介绍</p>
+          <a href="#" className="blog-btn">阅读更多</a>
+        </div>
       </div>
     )
   }

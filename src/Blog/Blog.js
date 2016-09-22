@@ -6,9 +6,6 @@ class Blog extends React.Component {
     return(
       <div style={{width:'100%',marginTop:'20px'}}>
         <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
       </div>
     )
   }

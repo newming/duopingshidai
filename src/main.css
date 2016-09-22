@@ -110,3 +110,17 @@ a:hover,a:focus,a:active,a:visited{
 .home-btn:hover{
   background-color: #00bcd4;
 }
+.blog-btn{
+  -webkit-transition: all 450ms ease;
+  transition: all 450ms ease;
+  background-color: #fff;
+  border: 1px solid #FF4081;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: #FF4081;
+  font-size: 14px;
+}
+.blog-btn:hover{
+  color:#fff;
+  background-color: #ff4081;
+}
